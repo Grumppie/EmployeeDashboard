@@ -1,6 +1,7 @@
-import EmployeeList from "./pages/EmployeeList/EmployeeList";
+import EmployeeList from "./pages/EmployeeListPage/EmployeeList";
 import { Routes, Route, Navigate } from "react-router-dom";
 import { useEffect, useState } from "react";
+import EmployeeDetails from "./pages/EmployeeDetailsPage/EmployeeDetails";
 
 function App() {
 
@@ -13,7 +14,8 @@ function App() {
   return (
     <Routes>
       <Route exact path="/" element={<EmployeeList tableData={tableData} />} />
-      {/* <Route path="*" element={<Navigate to="/" />} /> */}
+      <Route exact path="/employee/:id" element={<EmployeeDetails tableData={tableData} />} />
+      <Route path="*" element={<Navigate to="/" />} />
     </Routes>
   )
 }

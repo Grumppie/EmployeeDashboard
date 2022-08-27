@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import EmployeeTable from '../../components/EmpoyleeTable/EmployeeTable'
-import { FormControl, InputLabel, MenuItem, Select, TextField, Box, Button } from '@mui/material'
+import EmployeeTable from '../../components/EmployeeTable/EmployeeTable'
+import { FormControl, InputLabel, MenuItem, Select, TextField, Button } from '@mui/material'
 import classes from './EmployeeList.module.css'
 
 const EmployeeList = ({ tableData }) => {

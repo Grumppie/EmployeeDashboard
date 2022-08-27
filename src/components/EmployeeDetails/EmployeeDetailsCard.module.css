@@ -1,0 +1,33 @@
+.card {
+    background-color: #f1f1f1;
+    display: flex;
+    width: 850px;
+    margin: 2rem auto;
+    height: fit-content;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 12px;
+    font-size: 1.4rem;
+}
+
+.img {
+    height: 300px;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+.infoContainer {
+    width: 100%;
+    margin-left: 3rem;
+}
+
+.infoFeild {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.infoName {
+    margin-right: 1rem;
+    color: rgb(114, 192, 255);
+}
