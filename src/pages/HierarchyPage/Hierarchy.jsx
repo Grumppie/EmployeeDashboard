@@ -20,7 +20,7 @@ const Hierarchy = ({ tableData }) => {
     return (
         <>
             <div className={classes.searchBar}>
-                <TextField id="outlined-basic" label="Search Employee" variant="outlined" sx={{ width: '100%', margin: '0 1rem' }}
+                <TextField id="outlined-basic" label="Search Manager" variant="outlined" sx={{ width: '100%', margin: '0 1rem' }}
                     onChange={(e) => setQuery(e.target.value.toLowerCase())}
                     value={query}
                 />
