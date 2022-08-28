@@ -8,7 +8,6 @@ const EmployeeDetailsCard = ({ details }) => {
     const navigate = useNavigate()
     return (
         <>
-            <Button variant="outlined" sx={{ margin: '2rem' }} onClick={() => navigate('/')}>Employee List</Button>
             <div className={classes.card}>
                 <div className={classes.imgContainer}>
                     <img className={classes.img} src={employeePfp} alt="Employee pfp" />

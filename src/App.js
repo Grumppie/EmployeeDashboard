@@ -2,6 +2,8 @@ import EmployeeList from "./pages/EmployeeListPage/EmployeeList";
 import { Routes, Route, Navigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import EmployeeDetails from "./pages/EmployeeDetailsPage/EmployeeDetails";
+import Hierarchy from "./pages/HierarchyPage/Hierarchy";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
 
@@ -12,11 +14,15 @@ function App() {
   }, [])
 
   return (
-    <Routes>
-      <Route exact path="/" element={<EmployeeList tableData={tableData} />} />
-      <Route exact path="/employee/:id" element={<EmployeeDetails tableData={tableData} />} />
-      <Route path="*" element={<Navigate to="/" />} />
-    </Routes>
+    <>
+      <Navbar />
+      <Routes>
+        <Route exact path="/" element={<EmployeeList tableData={tableData} />} />
+        <Route exact path="/employee/:id" element={<EmployeeDetails tableData={tableData} />} />
+        <Route exact path="/hierarchy/" element={<Hierarchy tableData={tableData} />} />
+        <Route path="*" element={<Navigate to="/" />} />
+      </Routes>
+    </>
   )
 }
 
